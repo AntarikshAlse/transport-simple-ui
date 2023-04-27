@@ -594,3 +594,13 @@
 .grid-gap-40 {
   gap: 10rem;
 }
+
+.rounded-sm {
+  border-radius: 0.25rem;
+}
+.rounded-md {
+  border-radius: 0.5rem;
+}
+.rounded-lg {
+  border-radius: 0.75rem;
+}
