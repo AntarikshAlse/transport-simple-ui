@@ -52,9 +52,6 @@ a:active {
 button {
   border-radius: 8px;
 }
-section {
-  padding-left: 7rem;
-}
 h1,
 h2,
 h3,
@@ -98,6 +95,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  padding-left: 5rem;
 }
 
 nav a {
@@ -190,18 +188,14 @@ nav button {
   box-shadow: 0 0 0 35px rgb(232, 232, 232);
 }
 .features__stats {
-  box-sizing: content-box;
   padding-top: 0;
   position: relative;
   background-color: white;
-  max-width: fit-content;
   padding: 1rem 3rem;
   border-radius: 9px;
   margin-right: 0 auto;
   margin-right: 19%;
   box-shadow: 1px 1px 9px 0px rgba(28, 28, 28, 0.56);
-  position: absolute;
-  right: 0;
 }
 /* industry */
 .industry {
