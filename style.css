@@ -1,0 +1,231 @@
+/* root */
+@import "./utilities.css";
+
+:root {
+  --yellow: #ffc500;
+  --orange: #ffa200;
+  --headings: #363636;
+  --sub-headings: #3f3f3f;
+  --text: #5d5d6e;
+  --navyblue: #0537ac;
+  --bg-offset-blue: #f9fcff;
+  --light-blue: #4aa0fc;
+  font-family: GraphikRegular, sans-serif;
+  line-height: 1.25;
+}
+/* fonts */
+@font-face {
+  font-family: GraphikBold;
+  src: url("./assets/fonts/GraphikBold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: GraphikSemiBold;
+  src: url("./assets/fonts/GraphikSemibold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: GraphikRegular;
+  src: url("./assets/fonts/GraphikRegular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: GraphikMedium;
+  src: url("./assets/fonts/GraphikMedium.otf");
+  font-weight: 500;
+}
+body {
+  margin: 0;
+}
+a {
+  font-weight: 500;
+  color: var(--headings);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+a:active {
+  color: #646cff;
+}
+
+button {
+  border-radius: 8px;
+}
+section {
+  padding-left: 7rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--headings);
+  font-family: GraphikBold, sans-serif;
+}
+p {
+  line-height: 1.75;
+  font-size: larger;
+  color: var(--text);
+}
+/* custom */
+.highlight {
+  color: var(--light-blue);
+}
+
+.cta__btn {
+  color: white;
+  border: none;
+  background-color: var(--orange);
+  padding: 1rem 1.5rem;
+}
+
+/* nav */
+nav {
+  font-family: GraphikSemiBold, sans-serif;
+  background-color: white;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  margin-left: 1rem;
+}
+nav button {
+  padding: 0.75rem 1.2rem;
+  border: none;
+  background-color: var(--navyblue);
+  font-family: GraphikSemiBold, sans-serif;
+  color: white;
+}
+
+/* home */
+.home {
+  background-color: var(--bg-offset-blue);
+  height: 100vh;
+  position: relative;
+}
+
+.home__cta {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2.5rem;
+  max-width: 50%;
+}
+.home__btn {
+  font-family: GraphikMedium, sans-serif;
+  margin-right: 2rem;
+  padding: 1rem 1.5rem;
+}
+.home__contact__btn {
+  border-color: var(--orange);
+  background-color: white;
+  color: var(--orange);
+}
+
+.home__img {
+  position: relative;
+}
+.triangle {
+  display: inline-block;
+  width: 4rem;
+  filter: url("#goo");
+}
+.triangle::before {
+  content: "";
+  display: block;
+  padding-top: 86%;
+  width: 33rem;
+  right: -50rem;
+  position: absolute;
+  z-index: -1;
+  height: 22rem;
+  rotate: 30deg;
+  background: transparent linear-gradient(120deg, #0c4cf7 0%, #4aa0fc 100%) 0%
+    0% no-repeat padding-box;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.home__btmleft__svg {
+  position: relative;
+  left: -30rem;
+  background-color: var(--bg-offset-blue);
+}
+/* media query for home class */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home__cta {
+    max-width: 100%;
+  }
+}
+/* features */
+.features {
+  margin-top: 5rem;
+  position: relative;
+}
+.features__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.features__img {
+  /* position: absolute;
+  right: -8rem; */
+}
+.features__img--shadow {
+  box-shadow: 0 0 0 35px rgb(232, 232, 232);
+}
+.features__stats {
+  box-sizing: content-box;
+  padding-top: 0;
+  position: relative;
+  background-color: white;
+  max-width: fit-content;
+  padding: 1rem 3rem;
+  border-radius: 9px;
+  margin-right: 0 auto;
+  margin-right: 19%;
+  box-shadow: 1px 1px 9px 0px rgba(28, 28, 28, 0.56);
+}
+/* industry */
+.industry__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.industry__card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 14px #00000021;
+  border-radius: 21px;
+  opacity: 1;
+  position: relative;
+  height: 25rem;
+}
+.industry__img {
+  position: relative;
+  right: -8rem;
+}
+.industry__circle {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 40%;
+  top: -2.6rem;
+  background-color: var(--orange);
+  color: white;
+  font-family: GraphikMedium, sans-serif;
+}
+.card {
+  max-width: 28%;
+}
+.card__md {
+  max-width: 32%;
+}
