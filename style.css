@@ -207,7 +207,7 @@ nav button {
   border-radius: 21px;
   opacity: 1;
   position: relative;
-  height: 25rem;
+  padding-bottom: 3rem;
 }
 .industry__img {
   position: relative;
@@ -225,10 +225,10 @@ nav button {
   font-family: GraphikMedium, sans-serif;
 }
 .card {
-  max-width: 26%;
+  max-width: 23%;
 }
 .card__md {
-  max-width: 32%;
+  max-width: 27%;
 }
 /* about */
 .about {
