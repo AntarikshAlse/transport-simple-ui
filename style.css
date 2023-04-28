@@ -161,15 +161,6 @@ nav button {
   left: -30rem;
   background-color: var(--bg-offset-blue);
 }
-/* media query for home class */
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-  }
-  .home__cta {
-    max-width: 100%;
-  }
-}
 /* features */
 .features {
   margin-top: 5rem;
@@ -269,4 +260,83 @@ nav button {
 .contact {
   background-color: #003152;
   color: white;
+}
+
+/* media query */
+@media (max-width: 900px) {
+  nav {
+    padding-left: 0;
+    justify-content: space-between;
+  }
+  .home,
+  .features,
+  .achivements,
+  .contact {
+    padding-left: 2rem;
+  }
+  .routes,
+  .div3 {
+    display: none;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home__cta {
+    max-width: 100%;
+  }
+  #img1 {
+    top: 11rem;
+  }
+  #img3 {
+    width: 35vw;
+    height: 35vw;
+  }
+  #img4 {
+    position: absolute;
+    left: 12rem;
+    top: 12rem;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .features__info {
+    width: 100%;
+  }
+  .features__img {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+  }
+  .features__stats {
+    scale: 0.5;
+    position: relative;
+    left: 12rem;
+    bottom: 3rem;
+  }
+  .div1 img {
+    width: 80vw;
+    height: 50vw;
+  }
+  .div1__info {
+    width: 85vw;
+  }
+  achivements div {
+    padding-left: 0;
+  }
+  .div1 {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+  .div3,
+  .div2 {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .contact__info--sm {
+    flex-direction: column;
+  }
+  .contact___col1--sm {
+    width: 100%;
+  }
 }
