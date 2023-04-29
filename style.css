@@ -136,30 +136,24 @@ nav button {
 
 .home__img {
   position: relative;
-}
-.triangle {
-  display: inline-block;
-  width: 4rem;
-  filter: url("#goo");
-}
-.triangle::before {
-  content: "";
-  display: block;
-  padding-top: 86%;
-  width: 33rem;
-  right: -50rem;
-  position: absolute;
-  z-index: -1;
-  height: 22rem;
-  rotate: 30deg;
-  background: transparent linear-gradient(120deg, #0c4cf7 0%, #4aa0fc 100%) 0%
-    0% no-repeat padding-box;
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 100%;
+  background-image: url(./assets/images/svg-path.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 82%;
+  background-position-y: center;
 }
 .home__btmleft__svg {
+  width: 8vh;
+  scale: 2;
   position: relative;
-  left: -30rem;
-  background-color: var(--bg-offset-blue);
+  left: -4rem;
+  top: 4rem;
+}
+.home__right__svg {
+  height: 100%;
+  position: absolute;
+  right: 0;
 }
 /* features */
 .features {
@@ -284,15 +278,24 @@ nav button {
   .home__cta {
     max-width: 100%;
   }
+  .home__btmleft__svg {
+    width: 8vh;
+    scale: 1.25;
+    position: relative;
+    left: -3rem;
+    top: 1rem;
+  }
   #img1 {
+    position: relative;
     top: 11rem;
   }
   #img3 {
+    position: relative;
     width: 35vw;
     height: 35vw;
   }
   #img4 {
-    position: absolute;
+    position: relative;
     left: 12rem;
     top: 12rem;
   }
@@ -338,5 +341,28 @@ nav button {
   }
   .contact___col1--sm {
     width: 100%;
+  }
+  .features__img--shadow {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 1rem;
+  }
+  .flex-col--sm {
+    flex-direction: column;
+  }
+  .card,
+  .card__md {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .w-60--sm {
+    width: 60%;
+  }
+  .w-80--sm {
+    width: 80%;
+  }
+  .w-auto--sm {
+    width: auto;
   }
 }
