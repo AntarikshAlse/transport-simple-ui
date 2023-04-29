@@ -143,6 +143,7 @@ nav button {
   background-size: 82%;
   background-position-y: center;
 }
+
 .home__btmleft__svg {
   width: 8vh;
   scale: 2;
@@ -154,6 +155,25 @@ nav button {
   height: 100%;
   position: absolute;
   right: 0;
+}
+
+#img1 {
+  position: absolute;
+  top: 10rem;
+}
+#img2 {
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+}
+#img3 {
+  position: absolute;
+  top: 18rem;
+}
+#img4 {
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
 }
 /* features */
 .features {
@@ -268,6 +288,9 @@ nav button {
   .contact {
     padding-left: 2rem;
   }
+  .home {
+    height: 65rem;
+  }
   .routes,
   .div3 {
     display: none;
@@ -287,17 +310,18 @@ nav button {
   }
   #img1 {
     position: relative;
-    top: 11rem;
+    top: 4rem;
   }
   #img3 {
     position: relative;
     width: 35vw;
     height: 35vw;
+    left: 0.5rem;
   }
   #img4 {
     position: relative;
-    left: 12rem;
-    top: 12rem;
+    left: 1rem;
+    top: 10rem;
   }
   .info {
     flex-direction: column;
@@ -364,5 +388,8 @@ nav button {
   }
   .w-auto--sm {
     width: auto;
+  }
+  .flex-wrap--sm {
+    flex-wrap: wrap;
   }
 }
